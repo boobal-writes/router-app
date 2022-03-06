@@ -24,6 +24,7 @@ class App extends Component {
             <Route path="/posts/:year/:month" element={<Posts />} />
 
             <Route path="/admin" element={<Dashboard />} />
+            <Route path="/messages" element={<Navigate to="/posts" />} />
             <Route path="/not-found" element={<NotFound />} />
             <Route path="/" element={<Home />} />
             <Route path="*" element={<Navigate to="/not-found" />} />

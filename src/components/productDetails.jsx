@@ -7,7 +7,6 @@ class ProductDetails extends Component {
   };
 
   render() {
-    console.log(this.params);
     return (
       <div>
         <h1>Product Details - {this.props.match.params.id}</h1>
