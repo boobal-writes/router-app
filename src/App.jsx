@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Products from "./components/products";
 import Posts from "./components/posts";
@@ -24,7 +24,9 @@ class App extends Component {
             <Route path="/posts/:year/:month" element={<Posts />} />
 
             <Route path="/admin" element={<Dashboard />} />
+            <Route path="/not-found" element={<NotFound />} />
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<Navigate to="/not-found" />} />
           </Routes>
         </div>
       </div>
