@@ -3,7 +3,7 @@ import withRouter from "../utils/routeComponenetHelper";
 
 class ProductDetails extends Component {
   handleSave = () => {
-    // Navigate to /products
+    this.props.navigate("/products");
   };
 
   render() {
